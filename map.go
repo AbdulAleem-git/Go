@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // func main(){
 // 	var m map[string][]int
@@ -33,12 +35,12 @@ import "fmt"
 
 //Lets create one string to struct map
 
-type Employee struct{
-	salary int
+type Employee struct {
+	salary  int
 	country string
 }
 
-func main(){
+func main() {
 	emp1 := Employee{
 		200,
 		"india",
@@ -52,28 +54,28 @@ func main(){
 		"indonesia",
 	}
 	m := map[string]Employee{
-		"Abdul":emp1,
-		"rashid khan": emp2,
+		"Abdul":         emp1,
+		"rashid khan":   emp2,
 		"glane maxwell": emp3,
 	}
-	for k ,v := range m{
-		fmt.Printf("Name: %s\n",k)
-		fmt.Printf("Salary: %d\n",v.salary)
-		fmt.Printf("Country: %s\n",v.country)
+	for k, v := range m {
+		fmt.Printf("Name: %s\n", k)
+		fmt.Printf("Salary: %d\n", v.salary)
+		fmt.Printf("Country: %s\n", v.country)
 		fmt.Println()
 	}
 
-	employeesalary := map [string]int{
-		"abdul":2000,
-		"aleem":3000,
-		"rashid":3445,
+	employeesalary := map[string]int{
+		"abdul":  2000,
+		"aleem":  3000,
+		"rashid": 3445,
 	}
 	m2 := employeesalary
 	m2["abdul"] = 34554
 	fmt.Println(employeesalary["abdul"])
-	delete(m2 , "abdul")
+	delete(m2, "abdul")
 	fmt.Println(employeesalary["abdul"])
-	
+
 	// comparing of two map
 	// if m2 == employeesalary{
 	// 	fmt.Println("true")

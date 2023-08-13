@@ -1,0 +1,12 @@
+Exercise: Create a REST API for managing a list of books.
+
+Write a Go program that implements a REST API for managing a list of books. The API should support the following endpoints:
+
+GET /books: Retrieve a list of all books.
+GET /books/{id}: Retrieve details of a specific book by its ID.
+POST /books: Create a new book.
+PUT /books/{id}: Update an existing book by its ID.
+DELETE /books/{id}: Delete a book by its ID.
+Each book should have the following attributes: ID, Title, Author, and ISBN.
+
+Practice creating appropriate data structures, handling JSON encoding/decoding, routing HTTP requests, and implementing CRUD (Create, Read, Update, Delete) operations for the book resource.

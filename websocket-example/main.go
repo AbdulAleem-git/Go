@@ -8,6 +8,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
+// initiate a structure
 var upgrader = websocket.Upgrader{
 	// ReadBufferSize:  1024,
 	// WriteBufferSize: 1024,
